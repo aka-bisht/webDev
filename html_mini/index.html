@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Basic Language of The Web: HTML</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -28,7 +29,9 @@
         height="100"
       />
 
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      <p id="author">
+        Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+      </p>
 
       <img
         src="images/post-img.jpg"
@@ -39,8 +42,8 @@
 
       <p>
         All modern websites and web applications are built using three
-        fundamental technologies: HTML, CSS and JavaScript. These are the
-        languages of the web.
+        <em>fundamental</em> technologies: HTML, CSS and JavaScript. These are
+        the languages of the web.
       </p>
 
       <p>
@@ -100,44 +103,46 @@
     </main>
 
     <footer>
-      <h4>Related Posts</h4>
+      <aside>
+        <h4>Related Posts</h4>
 
-      <ul>
-        <li>
-          <img
-            src="images/related-1.jpg"
-            alt="person coding"
-            width="100"
-            height="100"
-          />
+        <ul class="related">
+          <li>
+            <img
+              src="images/related-1.jpg"
+              alt="person coding"
+              width="100"
+              height="100"
+            />
 
-          <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
-        </li>
-        <li>
-          <img
-            src="images/related-2.jpg"
-            alt="css effect"
-            width="100"
-            height="100"
-          />
+            <a href="#">How to Learn Web Development</a>
+            <p class="related-author">By Jonas Schmedtmann</p>
+          </li>
+          <li>
+            <img
+              src="images/related-2.jpg"
+              alt="css effect"
+              width="100"
+              height="100"
+            />
 
-          <a href="#">The Unknown Powers of CSS</a>
-          <p>By Jim Dillon</p>
-        </li>
-        <li>
-          <img
-            src="images/related-3.jpg"
-            alt="JavaScript snippet"
-            width="100"
-            height="100"
-          />
+            <a href="#">The Unknown Powers of CSS</a>
+            <p class="related-author">By Jim Dillon</p>
+          </li>
+          <li>
+            <img
+              src="images/related-3.jpg"
+              alt="JavaScript snippet"
+              width="100"
+              height="100"
+            />
 
-          <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
-        </li>
-      </ul>
-      <p>Copyright &copy; 2027 by The Code Magazine.</p>
+            <a href="#">Why JavaScript is Awesome</a>
+            <p class="related-author">By Matilda</p>
+          </li>
+        </ul>
+      </aside>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
     </footer>
   </body>
 </html>
