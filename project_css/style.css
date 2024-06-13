@@ -1,0 +1,59 @@
+body {
+  line-height: 1.2;
+  font-family: sans-serif;
+  border: 5px solid black;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+}
+
+.price {
+  font-size: large;
+}
+
+.shipping {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+  color: gray;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.details {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: medium;
+}
+
+li {
+  list-style-type: square;
+}
+
+button {
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+button:hover {
+  background: transparent;
+  color: black;
+  border: none;
+}
