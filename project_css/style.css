@@ -24,6 +24,18 @@ h1 {
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 10px;
+  position: relative;
+}
+
+h1::after {
+  content: "Sale";
+  color: white;
+  background-color: red;
+  padding: 10px;
+  font-size: medium;
+  position: absolute;
+  top: -20px;
+  left: -40px;
 }
 
 .price {
@@ -87,4 +99,37 @@ button:hover {
   background: transparent;
   color: black;
   border: none;
+}
+
+.color {
+  display: inline-block;
+  margin: 2px;
+  padding: 2px;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-green {
+  background-color: green;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+.colors {
+  margin-top: 20px;
 }
