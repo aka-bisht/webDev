@@ -1,7 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   line-height: 1.2;
   font-family: sans-serif;
+}
+
+.container {
+  width: 825px;
+  margin: 50px auto;
   border: 5px solid black;
+}
+
+img {
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -9,10 +23,12 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   background-color: #f7f7f7;
+  padding: 10px;
 }
 
 .price {
   font-size: large;
+  margin-bottom: 5px;
 }
 
 .shipping {
@@ -20,6 +36,11 @@ h1 {
   font-size: small;
   font-weight: bold;
   color: gray;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-bottom: 10px;
 }
 
 a:link {
@@ -32,19 +53,29 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .details {
   text-transform: uppercase;
   font-weight: bold;
   font-size: medium;
+  margin-top: 20px;
+}
+
+ul {
+  margin-left: 10px;
 }
 
 li {
   list-style-type: square;
+  margin: 10px;
 }
 
 button {
+  width: 825px;
+  border: none;
+  padding: 10px;
   font-size: large;
   text-transform: uppercase;
   font-weight: bold;
