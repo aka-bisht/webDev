@@ -1,11 +1,25 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   color: #444;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  font-size: 18px;
+}
+
+main {
+  margin-bottom: 60px;
 }
 
 h1,
@@ -21,12 +35,25 @@ h1 {
   text-transform: uppercase;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 h2 {
   font-size: 32px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
   font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h3 + p::first-line {
+  color: red;
 }
 
 h4 {
@@ -35,18 +62,35 @@ h4 {
   text-align: center;
 }
 
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
 p {
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 16px;
+  margin-bottom: 10px;
 }
-
-/* footer p {
-  font-size: 14px;
-} */
 
 #copyright {
   font-size: 14px;
@@ -66,14 +110,23 @@ li {
   list-style-type: none;
 }
 
-header {
+.main-header {
+  border-top: 10px solid #1098ad;
   background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  padding: 50px 0px;
+  width: 500px;
 }
 
 li:first-child {
@@ -82,16 +135,8 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
-
-/* li:nth-child(even) {
-  color: red;
-} */
-
-/* Misconception: this won't work!
-main p:first-child {
-  color: red;
-} */
 
 a:link {
   color: #1098ad;
@@ -111,4 +156,24 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+.post-img {
+  width: 50%;
+  height: auto;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
