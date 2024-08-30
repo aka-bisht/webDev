@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -181,13 +182,11 @@ button {
 /* Floats */
 
 main {
-  background-color: #1098ad;
   width: 780px;
   float: left;
 }
 
 aside {
-  background-color: #ffe70e;
   width: 380px;
   float: right;
 }
