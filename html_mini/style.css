@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  width: 700px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -176,4 +176,22 @@ button {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* Floats */
+
+main {
+  background-color: #1098ad;
+  width: 780px;
+  float: left;
+}
+
+aside {
+  background-color: #ffe70e;
+  width: 380px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
