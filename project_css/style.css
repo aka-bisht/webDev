@@ -41,7 +41,7 @@ h1::after {
 
 .price {
   font-size: large;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .shipping {
@@ -49,7 +49,7 @@ h1::after {
   font-size: small;
   font-weight: bold;
   color: gray;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .description {
@@ -73,7 +73,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-size: medium;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-left: 3px;
 }
 
@@ -138,7 +138,7 @@ button:hover {
 
 /* FLOATS*/
 
-.price {
+/* .price {
   float: left;
 }
 
@@ -165,4 +165,25 @@ button:hover {
 .product-details {
   width: 256px;
   float: left;
+} */
+
+/* Flexbox */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.minor {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.product-image {
+  display: flex;
+  flex-direction: column;
 }
